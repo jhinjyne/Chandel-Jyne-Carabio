@@ -1,0 +1,26 @@
+<?php
+
+class Rectangle {
+
+public int $height;
+public int $width;
+public int $depth;
+public int $area;
+public int $volume;
+
+public funtion setValue(string $name, int $value){
+  if($name == 'height'){
+  $this->height = $value;
+  }
+  if($name == 'width'){
+  $this->width = $value;
+  }
+  if($name == 'depth'){
+  $this->depth = $value;
+  }
+  
+  $this->area = $this->height*this->width;
+  $this->volume = $this->height*$this->width*$this->depth;
+}
+
+?>
